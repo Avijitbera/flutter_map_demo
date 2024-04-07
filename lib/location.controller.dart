@@ -3,7 +3,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_map_demo/data.model.dart';
 
-String _key = "AIzaSyAXARVkTfuYEUVT6f0qo2WGx3E3yoePMdc";
+String _key = "";
 
 getDirection(String from, String to)async{
   var result = await Dio().get("https://maps.googleapis.com/maps/api/directions/json?destination=${to}&origin=${from}&key=${_key}");
